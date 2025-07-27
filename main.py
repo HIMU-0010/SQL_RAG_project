@@ -1,8 +1,8 @@
 import streamlit as st
 import os
 from dotenv import load_dotenv
-from langchain_helper_Google_gemini import get_sql_agent, query_database
-# from langchain_helper_IBM_watson import get_sql_agent, query_database
+# from langchain_helper_Google_gemini import get_sql_agent, query_database
+from langchain_helper_IBM_watson import get_sql_agent, query_database
 import logging
 
 load_dotenv()
@@ -60,7 +60,6 @@ with st.sidebar:
         "What are the different sizes available?", 
         "Show me all white t-shirts",
         "What's the total inventory value?",
-        "Which brand has the most stock?",
         "How many Levi's t-shirts do we have?",
         "What sizes are available in Nike?",
         "Show me t-shirts under $50"
